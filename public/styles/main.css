@@ -437,31 +437,29 @@ th {
   padding: 0;
 }
 
-/* line 5, color.scss */
-.bg-grey {
-  background-color: #111;
-}
-
-/* line 3, font.scss */
+/* line 2, font.scss */
 body /deep/ .ft-24 {
   font-size: 24px;
 }
-/* line 7, font.scss */
+/* line 6, font.scss */
+body /deep/ .ft-20 {
+  font-size: 20px;
+}
+/* line 10, font.scss */
 body /deep/ .ft-upper {
   text-transform: uppercase;
 }
-/* line 11, font.scss */
+/* line 14, font.scss */
 body /deep/ .ft-space-4 {
   letter-spacing: 4px;
 }
-/* line 15, font.scss */
+/* line 18, font.scss */
+body /deep/ .ft-word-space-4 {
+  word-spacing: 4px;
+}
+/* line 22, font.scss */
 body /deep/ .ft-blue {
   color: blue;
-}
-
-/* line 5, color.scss */
-.bg-grey {
-  background-color: #111;
 }
 
 /* line 26, mixins.scss */
@@ -491,12 +489,13 @@ body /deep/ .ft-blue {
   align-items: flex-start;
 }
 
-/* line 6, main.scss */
+/* line 5, main.scss */
 .contents {
-  width: 70%;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* line 10, main.scss */
+.heading {
+  margin-left: 40px;
 }

@@ -1,11 +1,12 @@
 @import "normalize";
 @import "font";
-@import "color";
 @import "mixins";
 
 .contents {
-  width: 70%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.heading {
+  margin-left: 40px;
 }

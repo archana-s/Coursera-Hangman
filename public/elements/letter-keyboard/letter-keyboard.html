@@ -3,9 +3,9 @@
 <polymer-element name="letter-keyboard" constructor="LetterKeyboard" attributes="clickEvent">
   <template>
     <link rel="stylesheet" type="text/css" href="letter-keyboard.css">
-    <section class="ft-upper">
+    <section class="ft-upper" id="board">
       <template id="keyboard" repeat="{{model}}">
-        <paper-button label="{{key}}" raisedButton on-click="{{keyPressed}}"></paper-button>
+        <paper-button id="letter" label="{{key}}" raisedButton on-click="{{keyPressed}}"></paper-button>
       </template>
     </section>
   </template>

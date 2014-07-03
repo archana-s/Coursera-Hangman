@@ -7,11 +7,29 @@
   margin-left: 10px;
 }
 /* line 10, hangman-game.scss */
+:host /deep/ #gallowGameStart {
+  width: 150px;
+  min-width: 150px;
+}
+/* line 16, hangman-game.scss */
+:host /deep/ #startGameBtn {
+  width: 150px;
+}
+/* line 20, hangman-game.scss */
+:host /deep/ hangman-gallow, :host /deep/ #startGameBtn {
+  vertical-align: middle;
+}
+/* line 24, hangman-game.scss */
 :host /deep/ hangman-gallow {
   width: 150px;
 }
-/* line 14, hangman-game.scss */
-:host /deep/ letter-keyboard {
-  width: 350px;
-  height: auto;
+/* line 28, hangman-game.scss */
+:host /deep/ .keypad {
+  width: 480px;
+  max-width: 480px;
+  margin: 25px 0;
+}
+/* line 34, hangman-game.scss */
+:host /deep/ #trialsAvail {
+  margin: 10px 0;
 }

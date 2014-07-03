@@ -7,13 +7,32 @@
     margin-left: 10px;
   }
 
+  #gallowGameStart {
+    width: 150px;
+    min-width: 150px;
+  }
+
+
+  #startGameBtn {
+    width: 150px;
+  }
+
+  hangman-gallow, #startGameBtn {
+    vertical-align: middle;
+  }
+
   hangman-gallow {
     width: 150px;
   }
 
-  letter-keyboard {
-    width: 350px;
-    max-width: 350px;
-    height: auto;
+  .keypad {
+    width: 480px;
+    max-width: 480px;
+    margin: 25px 0;
   }
+
+  #trialsAvail {
+    margin: 10px 0;
+  }
+
 }

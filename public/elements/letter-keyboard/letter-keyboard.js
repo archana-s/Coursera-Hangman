@@ -18,5 +18,13 @@ Polymer('letter-keyboard', {
   keyPressed: function(evt) {
     this.chosenLetter = evt.target.label;
     this.fire(this.clickEvent, {"letter": this.chosenLetter});
+    evt.target.disabled = true;
+  },
+
+  resetKeyboard: function() {
+    var letterBtns = this.$.board.getElementsByTagName("paper-button");
+    for (var i=0; i<letterBtns.length; i++) {
+      letterBtns[i].disabled = false;
+    }
   }
 });

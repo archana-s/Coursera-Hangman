@@ -25,8 +25,9 @@ Polymer('hangman-game', {
   resetGameControls: function() {
     this.$.gameIO.style.display = "block";
     this.gameEnding = "";
-    this.$.keyboard.style.visibility = "visible";
     this.$.trialsAvail.style.visibility = "visible";
+    this.$.keyboard.resetKeyboard();
+    this.$.keyboard.style.visibility = "visible";
   },
 
   startGame: function() {
@@ -38,6 +39,7 @@ Polymer('hangman-game', {
   gameStartData: function(response) {
     this.game_state = response.detail.response;
     this.$.startGameBtn.disabled = true;
+    this.$.startGameBtn.label = "Playing ...";
   },
 
   gameGuessed: function(response) {

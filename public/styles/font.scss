@@ -1,7 +1,10 @@
-@import "color";
 body /deep/ {
   .ft-24 {
     font-size: 24px;
+  }
+
+  .ft-20 {
+    font-size: 20px;
   }
 
   .ft-upper {
@@ -10,6 +13,10 @@ body /deep/ {
 
   .ft-space-4 {
     letter-spacing: 4px;
+  }
+
+  .ft-word-space-4 {
+    word-spacing: 4px;
   }
 
   .ft-blue {

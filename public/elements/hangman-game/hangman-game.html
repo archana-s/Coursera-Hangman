@@ -10,7 +10,7 @@
     <core-ajax id="gameGuessing" handleAs="json" on-core-response="{{gameGuessed}}"></core-ajax>
 
     <section class="horz-flexbox-start">
-      <section>
+      <section id="gallowGameStart">
         <hangman-gallow num_tries_left="{{game_state.num_tries_left}}"></hangman-gallow>
         <paper-button id="startGameBtn" raisedButton label="Start Game" on-click="{{startGame}}"></paper-button>
       </section>
@@ -18,10 +18,13 @@
       <section id="gameIO">
         <h4>{{gameEnding}}</h4>
         <section>
-          <div class="ft-space-4 ft-24 ft-blue"> {{game_state.phrase}}</div>
+          <div class="ft-space-4 ft-word-space-4 ft-24 ft-blue"> {{game_state.phrase}}</div>
           <div id="trialsAvail">Tries Left: {{game_state.num_tries_left}}</div>
         </section>
-        <letter-keyboard id="keyboard" clickEvent="{{letterClickEvent}}"></letter-keyboard>
+
+        <section class="keypad">
+          <letter-keyboard id="keyboard" clickEvent="{{letterClickEvent}}"></letter-keyboard>
+        </section>
       </section>
     </section>
 
