@@ -1,24 +1,20 @@
 {
-  "name": "outdoors",
+  "name": "hangman",
   "version": "0.0.1",
   "authors": [
     "ArchanaS <archana.june@gmail.com>"
   ],
-  "description": "App to suggest great days to gaze and low light pollution zones",
+  "description": "Hangman game",
   "main": "server.js",
   "keywords": [
-    "charting",
-    "d3",
-    "svg"
+    "hangman"
   ],
   "license": "MIT",
   "homepage": "archana-s.github.io",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#~0.2.3",
