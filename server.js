@@ -5,6 +5,9 @@ var path = require('path');
 
 var hbs = require('hbs');
 
+var COURSERA_SERVER = "http://hangman.coursera.org";
+var USER_ACCOUNT = "archana.june@gmail.com";
+
 app.set('views', __dirname + '/public');
 app.use(express.static(__dirname + '/public'));
 
@@ -22,9 +25,9 @@ app.get("/startGame", function(req, res){
   var request = require('request');
 
   var options = {
-    url: 'http://hangman.coursera.org/hangman/game',
+    url: COURSERA_SERVER + '/hangman/game',
     method: 'POST',
-    json: {"email": "archana.june@gmail.com"}
+    json: {"email": USER_ACCOUNT}
   };
 
    var callback = function (error, response, body) {
@@ -46,7 +49,7 @@ app.get("/guessGame", function(req, res){
   var keyGuess = req.query.guess;
 
   var options = {
-    url: 'http://hangman.coursera.org/hangman/game/' + gameKey,
+    url: COURSERA_SERVER + '/hangman/game/' + gameKey,
     method: 'POST',
     json: {"guess": keyGuess}
   };
