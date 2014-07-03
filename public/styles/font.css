@@ -35,3 +35,7 @@ body /deep/ .ft-green {
 body /deep/ .ft-upper {
   text-transform: uppercase;
 }
+/* line 34, font.scss */
+body /deep/ .ft-space-4 {
+  letter-spacing: 4px;
+}
