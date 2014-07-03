@@ -488,6 +488,12 @@ body /deep/ .ft-blue {
   -webkit-align-items: flex-start;
   align-items: flex-start;
 }
+@media (max-width: 520px) {
+  /* line 31, mixins.scss */
+  * /deep/ .horz-flexbox-start {
+    display: block;
+  }
+}
 
 /* line 5, main.scss */
 .contents {

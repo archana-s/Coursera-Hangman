@@ -53,12 +53,18 @@ Polymer('hangman-game', {
   },
 
   checkGameStatus: function() {
+    this.updateNumTrials();
     var stateNow = this.game_state.state.toLowerCase();
     if (stateNow === "lost" || stateNow === "won") {
       this.endGameSetUp();
       if(stateNow === "lost") this.gameEnding = "You've Lost";
       else if(stateNow === "won") this.gameEnding = "Congratulations! You've Won";
     }
+  },
+
+  updateNumTrials: function() {
+    // convert the text to numeral and +1
+    this.game_state.numeral_trials = parseInt(this.game_state.num_tries_left, 10) + 1;
   },
 
   endGameSetUp: function() {

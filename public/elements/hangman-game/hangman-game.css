@@ -29,7 +29,14 @@
   max-width: 480px;
   margin: 25px 0;
 }
-/* line 34, hangman-game.scss */
+@media (max-width: 520px) {
+  /* line 35, hangman-game.scss */
+  :host /deep/ .keypad {
+    width: 300px;
+    max-width: 300px;
+  }
+}
+/* line 41, hangman-game.scss */
 :host /deep/ #trialsAvail {
   margin: 10px 0;
 }
