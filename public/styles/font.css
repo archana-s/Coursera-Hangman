@@ -1,0 +1,33 @@
+/* line 5, color.scss */
+.bg-grey {
+  background-color: #111;
+}
+
+/* line 3, font.scss */
+body /deep/ .ft-10 {
+  font-size: 10px;
+}
+/* line 6, font.scss */
+body /deep/ .ft-30 {
+  font-size: 30px;
+}
+/* line 10, font.scss */
+body /deep/ .ft-bold {
+  font-weight: bold;
+}
+/* line 14, font.scss */
+body /deep/ .ft-white {
+  color: white;
+}
+/* line 18, font.scss */
+body /deep/ .ft-orange {
+  color: orange;
+}
+/* line 22, font.scss */
+body /deep/ .ft-grey {
+  color: grey;
+}
+/* line 26, font.scss */
+body /deep/ .ft-green {
+  color: #8CCC8A;
+}

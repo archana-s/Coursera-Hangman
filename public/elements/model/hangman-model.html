@@ -1,0 +1,7 @@
+<link rel="import" href="/bower_components/core-ajax/core-ajax.html">
+<polymer-element name="hangman-model" constructor="HangmanModel">
+  <template>
+    <core-ajax id="gameStarter" handleAs="json" on-core-response="{{gameStartData}}"></core-ajax>
+  </template>
+  <script src="hangman-model.js"></script>
+</polymer-element>

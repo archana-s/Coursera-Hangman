@@ -1,0 +1,28 @@
+{
+  "name": "outdoors",
+  "version": "0.0.1",
+  "authors": [
+    "ArchanaS <archana.june@gmail.com>"
+  ],
+  "description": "App to suggest great days to gaze and low light pollution zones",
+  "main": "server.js",
+  "keywords": [
+    "charting",
+    "d3",
+    "svg"
+  ],
+  "license": "MIT",
+  "homepage": "archana-s.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.2.3",
+    "core-ajax": "Polymer/core-ajax",
+    "json3": "3.3.0"
+  }
+}
