@@ -470,6 +470,10 @@ body /deep/ .ft-grey {
 body /deep/ .ft-green {
   color: #8CCC8A;
 }
+/* line 30, font.scss */
+body /deep/ .ft-upper {
+  text-transform: uppercase;
+}
 
 /* line 5, color.scss */
 .bg-grey {

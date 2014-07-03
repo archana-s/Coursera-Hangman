@@ -19,7 +19,6 @@ app.get("/", function(req, res){
 });
 
 app.get("/startGame", function(req, res){
-  console.log("Calling...");
   var request = require('request');
 
   var options = {
@@ -29,9 +28,32 @@ app.get("/startGame", function(req, res){
   };
 
    var callback = function (error, response, body) {
-     debugger;
      if(error) {
-       console.log("Errored out :", error);
+       console.log("Errored out while creating a new game instance :", error);
+     }
+      if (!error && response.statusCode == 200) {
+        res.send(body);
+      }
+    };
+
+  request(options, callback);
+});
+
+app.get("/guessGame", function(req, res){
+  var request = require('request');
+
+  var gameKey = req.query.key;
+  var keyGuess = req.query.guess;
+
+  var options = {
+    url: 'http://hangman.coursera.org/hangman/game/' + gameKey,
+    method: 'POST',
+    json: {"guess": keyGuess}
+  };
+
+   var callback = function (error, response, body) {
+     if(error) {
+       console.log("Errored out while providing guesses:", error);
      }
       if (!error && response.statusCode == 200) {
         res.send(body);
