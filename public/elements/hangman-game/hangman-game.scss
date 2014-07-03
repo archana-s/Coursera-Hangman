@@ -1,0 +1,19 @@
+:host /deep/{
+  section {
+    margin: 12px 12px;
+  }
+
+  h4 {
+    margin-left: 10px;
+  }
+
+  hangman-gallow {
+    width: 150px;
+  }
+
+  letter-keyboard {
+    width: 350px;
+    max-width: 350px;
+    height: auto;
+  }
+}

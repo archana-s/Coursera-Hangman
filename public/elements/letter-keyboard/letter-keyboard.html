@@ -1,0 +1,12 @@
+<link rel="import" href="/bower_components/paper-button/paper-button.html">
+
+<polymer-element name="letter-keyboard" constructor="LetterKeyboard" attributes="clickEvent">
+  <template>
+    <section class="horz-flexbox-start ft-upper">
+      <template id="keyboard" repeat="{{model}}">
+        <paper-button label="{{key}}" raisedButton on-click="{{keyPressed}}"></paper-button>
+      </template>
+    </section>
+  </template>
+  <script src="letter-keyboard.js"></script>
+</polymer-element>

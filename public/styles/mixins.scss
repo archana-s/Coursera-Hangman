@@ -1,22 +1,3 @@
-.horz-align {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.vert-align {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.absolute-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 @mixin horz-flexbox($position, $vert-align) {
   display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
   display: -moz-box;      /* OLD: Firefox (buggy) */
@@ -41,17 +22,8 @@
   align-items: $vert-align;
 }
 
-
-.horz-flexbox-start {
-  @include horz-flexbox(flex-start, center);
-}
-
-.page-bottom-fixed {
-  position: fixed;
-  bottom: 0;
-}
-
-.page-bottom {
-  position: absolute;
-  bottom: 0;
+* /deep/ {
+  .horz-flexbox-start {
+    @include horz-flexbox(flex-start, flex-start);
+  }
 }

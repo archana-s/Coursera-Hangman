@@ -1,0 +1,107 @@
+/* line 20, hangman-gallow.scss */
+:host /deep/ .lowLight {
+  opacity: 0.1;
+}
+/* line 24, hangman-gallow.scss */
+:host /deep/ .highlight {
+  opacity: 1;
+}
+/* line 28, hangman-gallow.scss */
+:host /deep/ #gallow {
+  position: relative;
+  width: 120px;
+  height: 180px;
+}
+/* line 33, hangman-gallow.scss */
+:host /deep/ #gallow #gallowFrame {
+  width: inherit;
+  height: inherit;
+  border-bottom: 5px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 42, hangman-gallow.scss */
+:host /deep/ #gallow #gallowBody {
+  height: inherit;
+  width: 60px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  border-left: 4px solid black;
+  border-top: 4px solid black;
+}
+/* line 52, hangman-gallow.scss */
+:host /deep/ #gallow #noose {
+  height: 16px;
+  width: 3px;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  background-color: brown;
+  z-index: -1;
+}
+/* line 62, hangman-gallow.scss */
+:host /deep/ #gallow #manHead {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 2px solid #666666;
+  position: absolute;
+  top: 16px;
+  left: 50px;
+}
+/* line 72, hangman-gallow.scss */
+:host /deep/ #gallow #manBody {
+  height: 65px;
+  width: 0.8px;
+  border: 1px solid #666666;
+  background-color: #666666;
+  position: absolute;
+  top: 38px;
+  left: 60px;
+}
+/* line 82, hangman-gallow.scss */
+:host /deep/ #gallow #manRHand {
+  width: 25px;
+  height: 2px;
+  background-color: #666666;
+  position: absolute;
+  top: 63px;
+  left: 58px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* line 93, hangman-gallow.scss */
+:host /deep/ #gallow #manLHand {
+  width: 25px;
+  height: 2px;
+  background-color: #666666;
+  position: absolute;
+  top: 63px;
+  left: 40px;
+  transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+}
+/* line 104, hangman-gallow.scss */
+:host /deep/ #gallow #manLLeg {
+  width: 25px;
+  height: 2px;
+  background-color: #666666;
+  position: absolute;
+  top: 113px;
+  left: 40px;
+  transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+}
+/* line 115, hangman-gallow.scss */
+:host /deep/ #gallow #manRLeg {
+  width: 25px;
+  height: 2px;
+  background-color: #666666;
+  position: absolute;
+  top: 113px;
+  left: 58px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}

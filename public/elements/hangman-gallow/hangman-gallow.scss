@@ -1,0 +1,127 @@
+$podiumWidth: 60;
+$podiumLeft: 20;
+$podiumCenter: $podiumWidth - 20 + $podiumLeft;
+$nooseHeight: 16;
+$headSize: 20;
+$manLeft: $podiumCenter - $headSize/2;
+$bodyTop: $nooseHeight + $headSize + 2;
+$bodyHeight: 65;
+$armPosition: $bodyTop + 25;
+$leftArmPosition: $manLeft - 10;
+$rightArmPosition: $podiumCenter - 2;
+$legPosition: $bodyTop+$bodyHeight+10;
+
+$podiumColor: black;
+$manColor: #666;
+$nooseColor: brown;
+
+:host /deep/ {
+
+  .lowLight {
+    opacity: 0.1;
+  }
+
+  .highlight {
+    opacity: 1;
+  }
+
+  #gallow {
+    position: relative;
+    width: 120px;
+    height: 180px;
+
+    #gallowFrame {
+      width: inherit;
+      height: inherit;
+      border-bottom: 5px solid $podiumColor;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    #gallowBody {
+      height: inherit;
+      width: $podiumWidth+px;
+      position: absolute;
+      top: 0;
+      left: $podiumLeft+px;
+      border-left: 4px solid $podiumColor;
+      border-top: 4px solid $podiumColor;
+    }
+
+    #noose {
+      height: $nooseHeight+px;
+      width: 3px;
+      position: absolute;
+      top: 0;
+      left: $podiumCenter+px;
+      background-color: $nooseColor;
+      z-index: -1;
+    }
+
+    #manHead {
+      width: $headSize+px;
+      height: 20px;
+      border-radius: 100%;
+      border: 2px solid $manColor;
+      position: absolute;
+      top: $nooseHeight+px;
+      left: $manLeft+px;
+    }
+
+    #manBody {
+      height: $bodyHeight+px;
+      width: 0.8px;
+      border: 1px solid $manColor;
+      background-color: $manColor;
+      position: absolute;
+      top: $bodyTop+px;
+      left: $podiumCenter+px;
+    }
+
+    #manRHand {
+      width: 25px;
+      height: 2px;
+      background-color: $manColor;
+      position: absolute;
+      top: $armPosition+px;
+      left: $rightArmPosition+px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    #manLHand {
+      width: 25px;
+      height: 2px;
+      background-color: $manColor;
+      position: absolute;
+      top: $armPosition+px;
+      left: $leftArmPosition+px;
+      transform: rotate(-225deg);
+      -webkit-transform: rotate(-225deg);
+    }
+
+    #manLLeg{
+      width: 25px;
+      height: 2px;
+      background-color: $manColor;
+      position: absolute;
+      top: $legPosition+px;
+      left: $leftArmPosition+px;
+      transform: rotate(-225deg);
+      -webkit-transform: rotate(-225deg);
+    }
+
+    #manRLeg {
+      width: 25px;
+      height: 2px;
+      background-color: $manColor;
+      position: absolute;
+      top: $legPosition+px;
+      left: $rightArmPosition+px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+  }
+
+}

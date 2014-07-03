@@ -1,30 +1,7 @@
 @import "color";
 body /deep/ {
-  .ft-10 {
-    font-size: 10px;
-  }
-  .ft-30 {
-    font-size: 30px;
-  }
-
-  .ft-bold {
-    font-weight: bold;
-  }
-
-  .ft-white {
-    color: $colorWhite;
-  }
-
-  .ft-orange {
-    color: $colorOrange;
-  }
-
-  .ft-grey {
-    color: $colorGrey;
-  }
-
-  .ft-green {
-    color: #8CCC8A;
+  .ft-24 {
+    font-size: 24px;
   }
 
   .ft-upper {
@@ -33,5 +10,9 @@ body /deep/ {
 
   .ft-space-4 {
     letter-spacing: 4px;
+  }
+
+  .ft-blue {
+    color: blue;
   }
 }
