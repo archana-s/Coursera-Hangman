@@ -66,9 +66,11 @@ app.get("/guessGame", function(req, res){
   request(options, callback);
 });
 
+app.get("/404", function(req, res){
+  res.render("404");
+});
 app.use(function(req, res, next) {
   res.status(404);
-
   // respond with html page
   if (req.accepts('html')) {
     res.render('404', { url: req.url });
@@ -79,10 +81,12 @@ app.use(function(req, res, next) {
   res.type('txt').send('Not found');
 });
 
-
+app.get("/500", function(req, res){
+  res.render("503");
+});
 app.use(function(req, res, next) {
   res.status(500);
-
+  console.log("Ooh accessing 500 unfortunately");
   // respond with html page
   if (req.accepts('html')) {
     res.render('500', { url: req.url });
@@ -91,13 +95,4 @@ app.use(function(req, res, next) {
 
   // default to plain-text. send()
   res.type('txt').send('Forbidden');
-});
-
-
-app.get("/404", function(req, res){
-  res.render("404");
-});
-
-app.get("/500", function(req, res){
-  res.render("503");
 });
